@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.container {
+  max-width: 75rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.brand {
+  font-family: inherit;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: green;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  align-content: center;
+  width: 100%;
+  height: 3.5rem;
+}
+.menu .menu-item {
+  margin-bottom: 0;
+}
+.menu .menu-item a {
+  margin-bottom: 0;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 0 12px;
+}
+
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: gray;
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.menu-link.is-active {
+  position: relative;
+  color: #3a0ca3;
+  transition: all 0.35s ease;
+}
+
+.menu-name {
+  display: none;
+  font-family: inherit;
+  font-size: 10px !important;
+  font-weight: 400;
+  line-height: 1.25;
+  visibility: hidden;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 330px) {
+  .menu {
+    position: fixed;
+    z-index: 1000;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    margin: 0;
+  }
+  .menu-name {
+    display: block;
+    visibility: visible;
+    position: relative;
+    top: 3px;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .mm {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0 3%;
+  }
+  .mm a {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5%;
+  }
+  .mm a .orta {
+    position: relative;
+    top: 10px;
+    text-transform: lowercase !important;
+    color: grey !important;
+  }
+  .mm a .orta img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mm a:hover {
+    background-color: #4361ee;
+    color: white !important;
+  }
+  .mm a:hover .orta {
+    color: white !important;
+  }
+  .mm a p {
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    position: relative;
+    top: 4px;
+    font-weight: 600;
+  }
+  .scro {
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+  }
+  .scro .row {
+    gap: 10px;
+  }
+  .scro .row .card {
+    margin: 0 auto;
+    border: none !important;
+    border-bottom: 1px solid gray !important;
+  }
+  .scro .row .card video {
+    padding: 0 2%;
+  }
+  .scro .row .card .title {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -10px;
+  }
+  .scro .row .card .title i {
+    position: relative;
+    top: -8px;
+  }
+  .scro .row .card ol {
+    position: relative;
+    top: -19px;
+  }
+  .scro .row .card ol li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 800;
+  }
+  .scro .row .card ol li i {
+    color: green;
+  }
+  .scro .row .card ol a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 800;
+  }
+  .scro .row .card .sana {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -2rem;
+  }
+  .scro .row .card .sana p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .scro .row .card .sana .wiew {
+    position: relative;
+    top: -6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .scro .row .card .narx {
+    position: relative;
+    top: -2rem;
+  }
+  .scro .row .card .narx a {
+    padding: 10px 100px;
+    background-color: green;
+    color: white;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .mm {
+    margin-bottom: 1.5rem !important;
+  }
+  .mm a {
+    height: 8vh;
+  }
+  .mm a p {
+    position: relative;
+    top: -2px;
+  }
+  .row {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .mm {
+    margin-bottom: 1rem;
+  }
+  .mm a {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    text-decoration: none;
+  }
+  .mm a .orta {
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+    color: #3a0ca3;
+  }
+  .row .card {
+    width: 23rem !important;
+  }
+}
+@media only screen and (min-width: 390px) {
+  .row {
+    position: relative;
+    top: 17px;
+  }
+  .row .card {
+    width: 24rem !important;
+  }
+}
+@media only screen and (min-width: 412px) {
+  .row {
+    position: relative;
+    top: 2rem !important;
+  }
+  .row .card {
+    width: 25.5rem !important;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .row {
+    position: relative;
+  }
+  .row .card {
+    width: 25rem !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .menu-list {
+    justify-content: center;
+    -moz-column-gap: 3rem;
+    column-gap: 3rem;
+    font-family: "Lato", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    transition: all 0.35s ease-in-out;
+  }
+  .menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+  }
+  .menu-link.is-active::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 2rem;
+    height: 2px;
+    border: none;
+    outline: none;
+  }
+  .menu-link:hover {
+    transition: all 0.35s ease;
+  }
+  .menu-icon {
+    display: none;
+    visibility: hidden;
+  }
+  .menu-name {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0.2rem;
+  }
+  i {
+    display: none !important;
+  }
+  .row {
+    position: relative;
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
